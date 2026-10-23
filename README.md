@@ -24,7 +24,9 @@ NVIDIA GB10 (aarch64, DGX Spark class) machine, and a documented negative ink sc
    of its four maps), by the vision model of the AI agent that ran this work, on 110 sheets whose first tile is a
    known-text control (PHerc0343). The per-sheet record is [docs/REVIEW_LOG.md](docs/REVIEW_LOG.md). No rows of letters
    were seen. A human pass over the same sheets has not been done yet. This says where these models, at these depths,
-   do not show ink. It does not say there is no text.
+   do not show ink. It does not say there is no text. A later control on PHerc0841 showed this review style misses
+   faint text that Reader v2 shows ([docs/RESULTS.md](docs/RESULTS.md#update-2026-10-23-the-v1-review-was-weak-for-faint-ink)),
+   so this negative covers only strong ink.
 4. **A metadata finding ([docs/FAILURE_CASES.md](docs/FAILURE_CASES.md#1-spiral-fitting-tifxyz-area-and-scale)).** The tifxyz writer in villa's
    spiral-fitting stores `area_vx2 = valid quads × step²` and `scale = 1/step`, but fitted windings are not sampled at
    that step (measured median vertex spacing 14-37 voxels against a nominal 20). The stored `area_cm2` under-reports

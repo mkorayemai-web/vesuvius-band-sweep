@@ -1,5 +1,28 @@
 # Results: ink screen of PHerc0257 and PHerc0813 (negative)
 
+## Update (2026-10-23): the v1 review was weak for faint ink
+
+After v1 we tested the review itself on a scroll whose text is known.
+- **Data:** three public 9.4 µm surface volumes of PHerc0841 (113 keV, the same scan protocol as PHerc0257 and
+  PHerc0813). The answer key is the team's 2.4 µm ink maps of the same segments.
+- **Protocol:** the pass/fail rule was written down before the maps were made, and the sheets were judged before the
+  key was opened.
+- **Result:**
+  - the v1 sheet style (per side, the mean of the two models at two depths, about 150 µm/px) showed text rows on 1 of
+    the 3 segments;
+  - Reader v2 ([DomRusso2/reader-v2](https://github.com/DomRusso2/reader-v2)) at 75 µm/px showed them on all 3.
+- **What this means:**
+  - the v1 negative below rules out only ink about as strong as PHerc0343's; it says little about fainter ink;
+  - we are re-screening the best-supported windings with Reader v2 and will add the results here.
+- **Status (2026-10-23):** no candidate rows so far in the first 37 re-screened windings, in a 31-depth sweep
+  (d −15..+15) of 6 windings, or on the 6 public PHerc0800 team surfaces.
+
+As before, the review was done by the vision model of the AI agent that ran this work; no human pass yet.
+
+The v1 results (2026-10-22) follow unchanged.
+
+---
+
 Screened from 2026-10-14 to 2026-10-22 with the method in [METHOD.md](METHOD.md). The area is the true 3D mesh area (see
 [FAILURE_CASES.md §1](FAILURE_CASES.md#1-spiral-fitting-tifxyz-area-and-scale)).
 
